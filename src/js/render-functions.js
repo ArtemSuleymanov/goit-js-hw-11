@@ -32,11 +32,16 @@ if (!lightbox) {
 export function clearGallery(){
     gallery.innerHTML = " ";
 }
-
 export function showLoader() {
-    document.querySelector('.loader').classList.remove('hidden');
+    const loader = document.querySelector('.loader');
+    if (loader) {
+        loader.classList.remove('hidden');
+    }
 }
 
 export function hideLoader() {
-    document.querySelector('.loader').classList.add('hidden');
+    const loader = document.querySelector('.loader');
+    if (loader) {
+        loader.classList.add('hidden');
+    }
 }
